@@ -4,6 +4,7 @@ export default {
   data() {
     return {
       message: 'Hello Vue!',
+      image: 'https://picsum.photos/400/300',
     }
   }
 }
@@ -13,6 +14,8 @@ export default {
   <h1>
     {{ message }}
   </h1>
+
+  <img v-bind:src="image" alt="">
 </template>
 
 <style></style>
